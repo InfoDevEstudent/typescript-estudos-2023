@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos Typescript Modulo 02</title>
+</head>
+<body>
+    <h1>Type Annotations</h1>
+    <h2>Variáveis</h2>
+    <code>
+        // Variáveis TypeAnnotations<br>
+        let nome: string = 'Sérgio';<br>
+        let sobrenome: string = 'Felipe';<br>
+        let idade:number = 38;<br>
+        console.log(nome + ' ' + sobrenome + ' ' + idade + 'anos');
+    </code>
+    <h2>Arrays</h2>
+    <code>
+        // Variáveis TypeAnnotations<br>
+        let hardware: string[] =<br>
+        ['Placa Mãe',<br>
+        'Processador',<br>
+        'Memória',<br>
+        'SSD',<br>
+        'Placa de Vídeo',<br>
+        'Fonte',<br>
+        'Gabinete'];<br>
+        console.log(hardware);
+    </code>
+    <h2>Objetos</h2>
+    <code>
+        // Objetos TypeAnnotations<br>
+        let orcamento: {<br>
+            placaMae: number;<br>
+            processador: number;<br>
+            memoria: number;<br>
+            ssd: number;<br>
+            placaDeVideo: number;<br>
+            fonte: number;<br>
+            gabinete: number;<br>
+        };<br>
+        orcamento = {<br>
+            placaMae: 400,<br>
+            processador: 1200,<br>
+            memoria: 250,<br>
+            ssd: 150,<br>
+            placaDeVideo: 2500,<br>
+            fonte: 600,<br>
+            gabinete: 300<br>
+        };<br>
+        console.log(orcamento);
+    </code>
+    <h2>Funcions</h2>
+    <code>
+        // Function TypeAnnotations<br>
+        function media (num1:number, num2:number, num3:number){<br>
+            return (num1 + num2 + num3) / 3;<br>
+        }<br>
+        console.log(media(3, 5, 7));
+    </code>
+    <script src="./typeAnnotation.js"></script>
+</body>
+</html>
