@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos Typescript Praticando Modulo 02</title>
+</head>
+<body>
+    <h1>Calculo do IMC com TypeScript</h1>
+    <code>
+        let firstName:string = 'Sergio';<br>
+        let lastName:string = 'Felipe';<br>
+        let ages:number = 38;<br>
+        let estature:number = 1.75;<br>
+        let kg:number = 66;<br>
+        <br>
+        const calcIMC:number = kg / (estature * estature);<br>
+        <br>
+        function resultIMG (){<br>
+            if (calcIMC > 18.5 && calcIMC <= 24.9){<br>
+                return console.log('Parabéns:', firstName, lastName+',', 'hoje com', ages, 'anos, seu IMC', calcIMC.toFixed(2), 'é BOM!')<br>
+            } else if (calcIMC < 18.5){<br>
+                return console.log('Atenção: ', firstName, lastName+',', 'hoje com', ages, 'anos, seu IMC', calcIMC.toFixed(2), 'é RUIM!')<br>
+            }<br>
+        }<br>
+        <br>
+        console.log(resultIMG());
+    </code>
+    <script src="./praticandoModulo-02.js"></script>
+</body>
+</html>
