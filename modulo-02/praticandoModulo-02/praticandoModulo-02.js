@@ -14,3 +14,8 @@ function resultIMG() {
     }
 }
 console.log(resultIMG());
+let carroA = 'Sergio';
+let carroB = 'Margarida';
+let carroC = 'Tereza';
+[carroA, carroB, carroC] = [carroB, carroC, carroA];
+console.log(carroA, carroB, carroC);

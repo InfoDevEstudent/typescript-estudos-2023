@@ -13,5 +13,12 @@ function resultIMG (){
         return console.log('Atenção: ', firstName, lastName+',', 'hoje com', ages, 'anos, seu IMC', calcIMC.toFixed(2), 'é RUIM!')
     }
 }
-
 console.log(resultIMG());
+
+let carroA: string = 'Sergio';
+let carroB: string = 'Margarida';
+let carroC: string = 'Tereza';
+
+[carroA, carroB, carroC] = [carroB, carroC, carroA]
+
+console.log(carroA, carroB, carroC);
