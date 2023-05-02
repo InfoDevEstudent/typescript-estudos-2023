@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos Typescript Modulo 02</title>
+</head>
+<body>
+    <h1>Arrays no Typescript</h1>
+
+    <h2>Exemplo 01 - Uso de Colchetes:</h2>
+    <code>
+        let frutas: string[] = ['🍉', '🍋', '🍌', '🍑', '🍓', '🍒'];
+        console.log(frutas[3]);
+    </code>
+
+    <h2>Exemplo 02 - Arrays Object: MUITO MAIS COMUM NO DIA A DIA!</h2>
+    <code>
+        let frutas1: Array<string> = ['🍉', '🍋', '🍌', '🍑', '🍓', '🍒'];
+        console.log(frutas1[5]);
+    </code>
+
+    <h2>Exemplo 03 - Adicionando mais strings com método 'push':</h2>
+    <code>
+        let linguasFaladas: Array<string> = ['Português', 'Inglês'];
+        console.log(linguasFaladas);
+        linguasFaladas.push('Espanhol');
+        console.log(linguasFaladas);
+    </code>
+
+    <h2>Exemplo 04 - Identificar tamanho do array - método 'length':</h2>
+    <code>
+        let hardSkills: Array<string> = ['html', 'css', 'javascript', 'typescript'];
+        console.log(hardSkills.length);
+    </code>
+
+    <h2>Exemplo 05 - Exemplo de Array com 'Spread Operator':</h2>
+    <code>
+        let alunosMatriculas: Array<number> = [1, 2, 3, 4, 5, 6];
+        console.log(alunosMatriculas);
+        alunosMatriculas = [... alunosMatriculas, 7, 8, 9, 10];
+        console.log(alunosMatriculas);
+    </code>
+
+    <h2>Exemplo 06 - Exemplo de Array com Laço de Iteração:</h2>
+    <code>
+        let linguagemProg: string[] = new Array('JavaScript', 'Python', 'PHP', 'C#', 'JAVA');
+
+        function functionLinguagens (linguagemProg:string[]){
+            for (let i = 0; i < linguagemProg.length; i++) {
+                console.log(linguagemProg[i]);
+            }
+        }
+
+        functionLinguagens(linguagemProg);
+    </code>
+    
+    <script src="./arraysType.js"></script>
+</body>
+</html>
